@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--First Menu-->
+    <item
+        android:id="@+id/gotoLesson"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/go_to_lesson"
+        app:showAsAction="never"
+        app:tint="@color/white" />
+    <item
+        android:id="@+id/library"
+        android:icon="@drawable/ic_library"
+        android:title="Library"
+        app:showAsAction="never"
+        app:tint="@color/white" />
+    <item
+        android:id="@+id/read_verse"
+        android:title="@string/read_reference"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/insideStory"
+        android:title="@string/inside_story"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about_quarter"
+        android:title="@string/this_quarter"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/setts"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+    <!--Second menu-->
+    <item android:id="@+id/watch_video"
+        android:title="@string/videos"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/more"
+        android:orderInCategory="1"
+        android:title="More"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/dwldFile"
+                android:title="@string/bible_plugin"
+                android:icon="@drawable/ic_file"
+                app:showAsAction="never"
+                app:iconTint="@color/colorPrimary"/>
+            <item
+                android:id="@+id/changename"
+                android:icon="@drawable/ic_profile"
+                android:title="@string/change_username"
+                app:showAsAction="never"
+                app:iconTint="@color/colorPrimary"/>
+            <item
+                android:id="@+id/go_to_highlight"
+                android:title="@string/highlights"
+                android:icon="@drawable/ic_highlight"
+                app:showAsAction="never"
+                app:iconTint="@color/colorPrimary"/>
+            <item
+                android:id="@+id/verse_records"
+                android:title="@string/opened_references"
+                android:icon="@drawable/ic_history"
+                app:showAsAction="never"
+                app:iconTint="@color/colorPrimary"/>
+            <item
+                android:id="@+id/go_to_notes"
+                android:title="@string/notes"
+                android:icon="@drawable/ic_notes"
+                app:showAsAction="never"
+                app:iconTint="@color/colorPrimary"/>
+            <!--<item
+                android:id="@+id/visitWeb"
+                android:title="@string/visit_website"
+                android:icon="@drawable/ic_web"
+                app:showAsAction="never"
+                app:iconTint="@color/colorPrimary"/>-->
+            <item
+                android:id="@+id/share"
+                android:title="@string/share_app"
+                android:icon="@drawable/ic_share"
+                app:showAsAction="never"
+                app:iconTint="@color/colorPrimary"/>
+            <item
+                android:id="@+id/about"
+                android:title="@string/about"
+                android:icon="@drawable/ic_about"
+                app:showAsAction="never"
+                app:iconTint="@color/colorPrimary"/>
+        </menu>
+    </item>
+
+</menu>

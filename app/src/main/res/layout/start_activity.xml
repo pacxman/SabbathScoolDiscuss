@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@color/colorPrimary">
+
+	<ScrollView
+		android:id="@+id/scrl"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerInParent="true">
+
+		<TextView
+			android:id="@+id/start_msg"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:textColor="#F2EAE9"
+			android:gravity="center"/>
+
+	</ScrollView>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="Continue"
+		android:layout_width="wrap_content"
+		android:layout_marginRight="10dp"
+		android:id="@+id/start_btn"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
+

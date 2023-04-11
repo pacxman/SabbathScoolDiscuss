@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="10dp"
+		android:minHeight="92dp"
+		android:minWidth="200dp"
+		android:orientation="vertical"
+		android:background="@drawable/dwn_bkg">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="@string/downloading"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:padding="5dp"
+			android:textColor="#163a2a"
+			android:id="@+id/down_txt"/>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:layout_marginTop="6dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="0%"
+				android:minWidth="50dp"
+				android:gravity="right"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:layout_centerVertical="true"
+				android:padding="2dp"
+				android:textColor="#163a2a"
+				android:textStyle="bold"
+				android:id="@+id/pbartext"/>
+			<ProgressBar
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_margin="4dp"
+				android:layout_width="match_parent"
+				android:layout_height="24dp"
+				android:layout_toLeftOf="@+id/pbartext"
+				android:id="@+id/progressBar"
+				android:progressDrawable="@drawable/gradient_progress"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

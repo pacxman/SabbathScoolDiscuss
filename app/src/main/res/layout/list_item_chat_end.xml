@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/dateStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/time_stamp_drawable"
+        android:gravity="center"
+        android:padding="6dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/bubble_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateStamp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_speech_bubble_outgoing"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingLeft="13dp"
+        android:paddingTop="7dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp">
+
+        <RelativeLayout
+            android:id="@+id/reply_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/rect_reply_end"
+            android:padding="6dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/reply_sender_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:textSize="11.5sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reply_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reply_sender_tv"
+                android:maxHeight="56dp"
+                android:textSize="13.6sp"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:gravity="left"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:lineSpacingExtra="2dp"
+            android:padding="1dp"
+            android:textColor="@color/bkg_black"
+            android:textSize="12.5sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:textColorLink="#1589FF"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/bkg_black"
+            android:textSize="15.6sp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:lineSpacingExtra="2dp"
+                android:padding="1dp"
+                android:textColor="@color/bkg_black"
+                android:textSize="11.2sp" />
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/sent_status"
+                android:layout_gravity="right" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+</RelativeLayout>

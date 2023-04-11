@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_gravity="center_horizontal|center_vertical"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_margin="16dp"
+		android:background="@drawable/date_pk_bk">
+
+		<ScrollView
+			android:layout_gravity="center"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:padding="6dp"
+			android:fillViewport="true">
+
+			<TextView
+				android:layout_height="match_parent"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:autoLink="web|email"
+				android:id="@+id/rater_msg"
+				android:textColor="#000000"
+				android:textStyle="bold"/>
+
+		</ScrollView>
+
+		<LinearLayout
+			android:layout_gravity="center"
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:gravity="right|end"
+			android:padding="2dp"
+			android:layout_width="match_parent">
+
+			<!--<Button
+				android:layout_width="wrap_content"
+				android:layout_height="32dp"
+				android:background="@drawable/transp_round_rect"
+				android:textColor="#BD0000"
+				android:text="@string/dismiss"
+				android:id="@+id/rateClose"
+				android:layout_marginBottom="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="4dp"
+				android:layout_marginRight="4dp"
+				android:textStyle="bold"/>-->
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="32dp"
+				android:background="@drawable/transp_round_rect_red"
+				android:textColor="@color/colorAccent"
+				android:text="@string/later"
+				android:id="@+id/rateLater"
+				android:layout_marginBottom="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="7dp"
+				android:layout_marginEnd="7dp"
+				android:textStyle="bold"/>
+
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="32dp"
+				android:background="@drawable/trans_round_rect_blue"
+				android:textColor="#0A0ADA"
+				android:text="@string/visit"
+				android:id="@+id/rate"
+				android:layout_marginBottom="10dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="4dp"
+				android:layout_marginEnd="4dp"
+				android:textStyle="bold"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="font">
+        <item>12</item>
+        <item>14</item>
+		<item>16</item>
+		<item>18</item>
+        <item>20</item>
+		<item>21</item>
+		<item>22</item>
+		<item>24</item>
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+        <item>48</item>
+        <item>72</item>
+	</string-array>
+	<string-array name="fonts">
+		<item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+		<item>21</item>
+        <item>22</item>
+        <item>24</item>
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+        <item>48</item>
+        <item>72</item>
+	</string-array>
+	<string-array name="hrname">
+		<item>05h00</item>
+		<item>06h00</item>
+		<item>07h00</item>
+		<item>08h00</item>
+        <item>09h00</item>
+        <item>10h00</item>
+        <item>11h00</item>
+		<item>12h00</item>
+		<item>13h00</item>
+		<item>14h00</item>
+        <item>15h00</item>
+        <item>16h00</item>
+        <item>17h00</item>
+		<item>18h00</item>
+		<item>19h00</item>
+		<item>20h00</item>
+	</string-array>
+	<string-array name="hrvalues">
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+		<item>12</item>
+		<item>13</item>
+		<item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+		<item>18</item>
+		<item>19</item>
+		<item>20</item>
+	</string-array>
+	<string-array name="refcolor">
+		<item>Dodger blue</item>
+		<item>Blue</item>
+		<item>Reddish</item>
+		<item>Pink</item>
+		<item>Yellowish</item>
+		<item>Maroon</item>
+		<item>Magenta</item>
+		<item>Cyan</item>
+        <item>Dark blue</item>
+        <item>Darkish</item>
+        <item>Bluish</item>
+        <item>Independance</item>
+        <item>Prussian</item>
+        <item>Deep blue</item>
+	</string-array>
+	<string-array name="refcolorvalues">
+		<item>#1589FF</item>
+		<item>#0000ff</item>
+		<item>#CF6679</item>
+		<item>#ff1493</item>
+		<item>#DADA00</item>
+		<item>#800000</item>
+		<item>#FF00FF</item>
+		<item>#00FFFF</item>
+        <item>#001B3A</item>
+        <item>#00022e</item>
+        <item>#254A5D</item>
+        <item>#4C516D</item>
+        <item>#003048</item>
+        <item>#1800C0</item>
+
+    </string-array>
+	<string-array name="display_fonts">
+		<item>Small</item>
+		<item>Medium</item>
+		<item>Large</item>
+		<item>Extra</item>
+	</string-array>
+	<string-array name="display_value_fonts">
+		<item>14</item>
+		<item>18</item>
+		<item>22</item>
+		<item>24</item>
+	</string-array>
+	<string-array name="fonts_family">
+		<item>Slabo</item>
+		<item>Bitter</item>
+		<item>Lato</item>
+		<item>Andada</item>
+		<item>PT Serif</item>
+		<item>Cambo</item>
+		<item>Times New Roman</item>
+	</string-array>
+	<string-array name="fonts_value">
+		<item>slabo</item>
+		<item>bitter</item>
+		<item>lato</item>
+		<item>andada</item>
+		<item>ptserif</item>
+		<item>cambo</item>
+		<item>tnr</item>
+	</string-array>
+	
+
+</resources>

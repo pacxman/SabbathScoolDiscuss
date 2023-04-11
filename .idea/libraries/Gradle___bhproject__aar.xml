@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: :bhproject:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7fdb9711d0484b4eef884371fa2f205f/transformed/jetified-bhproject/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7fdb9711d0484b4eef884371fa2f205f/transformed/jetified-bhproject/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7fdb9711d0484b4eef884371fa2f205f/transformed/jetified-bhproject/jars/libs/apache-commons-lang.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7fdb9711d0484b4eef884371fa2f205f/transformed/jetified-bhproject/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

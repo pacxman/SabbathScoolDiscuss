@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/comments" 
+        android:title="@string/comments"
+        app:showAsAction="never" />
+    <item android:id="@+id/about_quarter"
+        android:title="@string/this_quarter"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/share"
+        android:title="@string/share_app"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="never"
+        app:iconTint="@color/colorPrimary"/>
+    
+</menu>

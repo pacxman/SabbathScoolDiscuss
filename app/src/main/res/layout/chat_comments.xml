@@ -1,0 +1,114 @@
+<SlidingDrawer
+		xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+		android:rotation="360"
+		android:id="@+id/drawer"
+		android:layout_marginTop="4dp"
+		android:layout_width="306dp"
+		android:allowSingleTap="true"
+		android:animateOnClick="true"
+		android:layout_height="match_parent"
+		android:handle="@+id/handleHolder1"
+		android:content="@+id/content"
+		android:layout_gravity="start|bottom"
+		android:layout_marginBottom="0dip">
+
+		<LinearLayout
+				android:id="@+id/handleHolder1"
+				android:layout_gravity="left"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content">
+
+		</LinearLayout>
+
+		<RelativeLayout
+				android:rotation="360"
+				android:id="@+id/content"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:descendantFocusability="beforeDescendants"
+				android:focusableInTouchMode="true"
+				android:background="@drawable/sl_shape">
+
+				<ScrollView
+						android:id="@+id/btSheet"
+						android:layout_alignParentBottom="true"
+						android:fillViewport="true"
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent">
+
+						<RelativeLayout
+								android:rotation="360"
+								android:layout_height="wrap_content"
+								android:layout_margin="2dp"
+								android:padding="8dp"
+								android:descendantFocusability="beforeDescendants"
+								android:focusableInTouchMode="true"
+								android:minHeight="50dp"
+								android:layout_width="match_parent">
+
+								<Button
+										android:rotation="360"
+										style="?android:attr/buttonStyleSmall"
+										android:layout_width="wrap_content"
+										android:layout_height="32dp"
+										android:layout_marginLeft="3dp"
+										android:background="@drawable/snd_bkg"
+										android:textColor="#FFFFFF"
+										android:text="Send"
+										android:id="@+id/btSend"
+										android:layout_centerVertical="true"
+										android:layout_alignParentRight="true"/>
+
+								<EditText
+										android:rotation="360"
+										android:layout_toLeftOf="@+id/btSend"
+										android:background="@drawable/btm_bkg"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:minHeight="50dp"
+										android:textColor="#000000"
+										android:paddingTop="6dp"
+										android:paddingLeft="10dp"
+										android:paddingBottom="6dp"
+										android:hint="Type comment..."
+										android:maxHeight="124dp"
+										android:id="@+id/etText"
+										android:maxLength="1000"
+										android:layout_alignParentLeft="true"
+										android:layout_toStartOf="@+id/btSend"
+										android:textCursorDrawable="@drawable/cursor_drawable"
+										android:textColorHint="#404040"/>
+
+						</RelativeLayout>
+
+				</ScrollView>
+
+				
+
+						<android.support.v7.widget.RecyclerView
+								android:rotation="360"
+								android:id="@+id/chats_recycler"
+								android:layout_above="@+id/btSheet"
+								android:descendantFocusability="beforeDescendants"
+								android:scrollbars="vertical"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_alignParentTop="true"
+								android:layout_alignParentStart="true"
+						/>
+				
+
+				<ImageButton
+						android:id="@+id/closeDrawer"
+						android:layout_height="wrap_content"
+						style="?android:attr/buttonBarButtonStyle"
+						android:layout_width="wrap_content"
+						android:src="@android:drawable/ic_menu_close_clear_cancel"
+						android:layout_alignParentRight="true"
+						android:layout_alignParentTop="true"/>
+
+		</RelativeLayout>
+
+</SlidingDrawer>

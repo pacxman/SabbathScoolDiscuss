@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center_vertical|center_horizontal">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_margin="7dp"
+		android:background="@drawable/dlg_bkg">
+
+		<LinearLayout
+			android:id="@+id/top_bar"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="@drawable/dlg_header">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:padding="6dp"
+				android:textColor="#000000"
+				android:text="Bible plugin"/>
+
+		</LinearLayout>
+
+		<RelativeLayout
+			android:layout_below="@+id/top_bar"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/dwndTxtHolder"
+			android:layout_marginBottom="10dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="@string/download_instr"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:padding="3dp"
+				android:id="@+id/downloadTxt"
+				android:textColor="#FFFFFF"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentRight="true"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:paddingBottom="5dp"
+			android:paddingTop="5dp"
+			android:layout_below="@id/dwndTxtHolder">
+
+			<Button
+				android:background="@drawable/snd_bkg"
+				android:layout_height="wrap_content"
+				android:text="Later"
+				android:layout_width="wrap_content"
+				android:id="@+id/downloadCancel"
+				android:layout_margin="6dp"
+				android:textColor="#FFFEFF"/>
+
+			<Button
+				android:background="@drawable/snd_bkg"
+				android:layout_height="wrap_content"
+				android:text="Yes"
+				android:layout_width="wrap_content"
+				android:layout_toRightOf="@id/downloadCancel"
+				android:layout_margin="6dp"
+				android:id="@+id/downloadAccept"
+				android:textColor="#FFFFFF"/>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</RelativeLayout>

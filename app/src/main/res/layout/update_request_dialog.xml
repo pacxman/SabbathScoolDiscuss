@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        android:background="@drawable/dlg_bkg" >
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/upTxtArea"
+            android:layout_marginBottom="6dp">
+
+            <ScrollView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:fillViewport="true">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/updateText"
+                    android:text="@string/new_version_msg"
+                    android:textColor="#FFFFFF"/>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="38dp"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_below="@id/upTxtArea">
+
+            <Button
+                android:background="@drawable/snd_bkg"
+                android:layout_height="wrap_content"
+                android:text="@string/download"
+                android:layout_width="wrap_content"
+                android:layout_margin="6dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:id="@+id/download"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentRight="true"/>
+
+            <Button
+                android:background="@drawable/snd_bkg"
+                android:layout_height="wrap_content"
+                android:text="@string/not_now"
+                android:layout_width="wrap_content"
+                android:id="@+id/not_now"
+                android:layout_margin="6dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:textColor="#FFFEFF"
+                android:layout_toLeftOf="@+id/download"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

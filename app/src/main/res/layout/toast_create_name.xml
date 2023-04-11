@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_margin="7dp"
+		android:background="@drawable/dlg_bkg"
+		android:layout_centerHorizontal="true">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/upclose"
+			android:background="@drawable/dlg_header">
+
+			<ImageButton
+				android:layout_height="wrap_content"
+				android:id="@+id/clsbtn"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_width="wrap_content"
+				android:src="@android:drawable/ic_menu_close_clear_cancel"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="No username"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_centerVertical="true"
+				android:textColor="#000000"
+				android:padding="6dp"/>
+
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@+id/upclose"
+			android:orientation="vertical"
+			android:id="@+id/uptxtarea"
+			android:gravity="center">
+
+			<ScrollView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:padding="6dp"
+				android:fillViewport="true">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="@string/no_name_msg"
+					android:layout_width="wrap_content"
+					android:textColor="#FFFFFF"/>
+
+			</ScrollView>
+
+			<Button
+				android:layout_height="38dp"
+				android:background="@drawable/snd_bkg"
+				android:layout_width="wrap_content"
+				android:padding="6dp"
+				android:textColor="#ffffff"
+				android:text="Create it now"
+				android:id="@+id/createname"
+				android:layout_gravity="right"
+				android:layout_marginBottom="6dp"
+				android:layout_marginRight="6dp"
+				android:layout_marginTop="6dp"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

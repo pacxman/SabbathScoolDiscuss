@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="font_size"
+        android:summary="preference"
+        android:title="@string/font">
+        <ListPreference
+            android:defaultValue="21"
+            android:entries="@array/font"
+            android:entryValues="@array/fonts"
+            android:key="font"
+            android:summary="@string/set_font_size"
+            android:title="@string/font_size" />
+        <ListPreference
+            android:defaultValue="22"
+            android:entries="@array/display_fonts"
+            android:entryValues="@array/display_value_fonts"
+            android:key="display_size"
+            android:summary="@string/size_display"
+            android:title="@string/text_size" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:enabled="true"
+        android:key="notification"
+        android:summary="preference"
+        android:title="@string/notification">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="notify"
+            android:summary="@string/receive_daily"
+            android:title="@string/remind_me" />
+
+        <ListPreference
+            android:defaultValue="7"
+            android:entries="@array/hrname"
+            android:entryValues="@array/hrvalues"
+            android:key="ntfHr"
+            android:summary="@string/set_notification"
+            android:title="@string/choose_hour" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="showAlert"
+            android:summary="@string/show_alert"
+            android:title="@string/start_alert" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="mode"
+        android:summary="preference"
+        android:title="@string/read_mode">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="night"
+            android:summary="@string/use_night_mode"
+            android:title="@string/night_mode" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="fonts"
+        android:summary="preference"
+        android:title="@string/font_type">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="defFont"
+            android:summary="@string/use_default_font"
+            android:title="@string/default_font" />
+        <ListPreference
+            android:defaultValue="bitter"
+            android:entries="@array/fonts_family"
+            android:entryValues="@array/fonts_value"
+            android:key="font_family"
+            android:summary="@string/font_family_summary"
+            android:title="@string/font_family_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="references"
+        android:summary="preference"
+        android:title="@string/references">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="underline"
+            android:summary="@string/underline_inline"
+            android:title="@string/underline_references" />
+        <ListPreference
+            android:defaultValue="#254A5D"
+            android:entries="@array/refcolor"
+            android:entryValues="@array/refcolorvalues"
+            android:key="recolor"
+            android:summary="@string/choose_highlight"
+            android:title="@string/reference_color" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:enabled="true"
+        android:key="appearance"
+        android:summary="preference"
+        android:title="@string/appearance">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="mark"
+            android:summary="@string/mark_summary"
+            android:title="@string/mark_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:enabled="true"
+        android:key="appearance"
+        android:summary="preference"
+        android:title="@string/auto_scroll">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="scroll_title"
+            android:summary="@string/scroll_desc"
+            android:title="@string/scroll_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:enabled="true"
+        android:key="data_saving"
+        android:summary="preference"
+        android:title="@string/save_historic">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="save_references"
+            android:summary="@string/save_ref_summary"
+            android:title="@string/save_reference" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:enabled="true"
+        android:key="other"
+        android:summary="preference"
+        android:title="@string/other">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_mission"
+            android:summary="@string/show_mission_summary"
+            android:title="@string/show_mission_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:enabled="true"
+        android:key="layout"
+        android:summary="preference"
+        android:title="@string/layout">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="show_tabs"
+            android:summary="@string/show_tabs_summary"
+            android:title="@string/show_tabs" />
+    </PreferenceCategory>
+</PreferenceScreen>

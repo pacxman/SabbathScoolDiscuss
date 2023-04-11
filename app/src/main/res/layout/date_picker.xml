@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:gravity="center"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_margin="16dp"
+		android:background="@drawable/date_pk_bk">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Select lesson date"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:padding="6dp"
+			android:gravity="center"
+			android:textStyle="bold"
+			android:textColor="@color/colorPrimaryDark"/>
+
+		<DatePicker
+			android:id="@+id/picker"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:background="@color/colorPrimary"
+			android:headerBackground="@color/colorPrimary"
+			android:layout_marginLeft="3dp"
+			android:layout_marginRight="3dp"
+			android:scaleX="1.1"
+			android:scaleY="1"
+			android:spinnersShown="false"
+			android:theme="@style/PickerTheme"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="@string/go_to_lesson"
+			android:layout_width="match_parent"
+			android:id="@+id/sendExtra"
+			android:background="@drawable/pkr_btn_bkg"
+			android:textColor="@color/black"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

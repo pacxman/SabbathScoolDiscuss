@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/story"
+        android:icon="@drawable/ic_writing"
+        app:iconTint="@color/white"
+        android:title="Current story"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_refresh"
+        app:iconTint="@color/white"
+        android:title="@string/go_to_lesson"
+        app:showAsAction="always" />
+</menu>
