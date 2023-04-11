@@ -1172,13 +1172,6 @@ public class MainActivity extends AppCompatActivity implements IUnityAdsInitiali
         imm.hideSoftInputFromWindow(editText.getWindowToken(), 0);
     }
 
-	/*private void sendTokenId() {
-		if (appPrefs.contains("fToken") && !Variables.userName.equals("[noUsername]")) {
-			String refreshedToken = appPrefs.getString("fToken", "noToken");
-			refUsers.child().child(Variables.userName).child("token").setValue(refreshedToken);
-		}
-	}*/
-
     private void savePreferences(SharedPreferences.Editor editor) {
         editor.putBoolean("firstRun", isFirstRun);
         //editor.putString("username", Variables.userName);
@@ -2635,7 +2628,6 @@ public class MainActivity extends AppCompatActivity implements IUnityAdsInitiali
                     if (appPrefs.contains("plg_vrs")) {
                         int prefVersion = appPrefs.getInt("plg_vrs", panelHandler.getVersionCode());
                         if (version != prefVersion) {
-                            //Download plugin here
                             runOnUiThread(() -> {
                                 checkCurrentResources(true);
                             });

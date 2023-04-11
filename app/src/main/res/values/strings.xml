@@ -244,7 +244,7 @@
     <string name="send_icon">Send icon</string>
     <string name="you">You</string>
     <string name="reply_deleted">Message was removed or deleted</string>
-    <string name="first_report_hint">Dufatako ko twese hano dufite imyitwarire y\'imibereho ya gikristo. Niba ubonye igitekerezo cyangwa ikibazo kinyuranye nibi ushobora kugitangaho raporo kugirango dusuzume hanyuma dufate ingamba kuri icyo gitekerezo cyangwa ikibazo</string>
+    <string name="first_report_hint">Twifuza kuragwa n\'indanga gaciro za gikristo.\n\nNiba ubonye igitekerezo cyangwa ikibazo kinyuranye nibi ushobora kugitangaho raporo kugirango dufate ingamba kuri icyo gitekerezo cyangwa ikibazo.</string>
     <string name="report_request">Urashaka gutanga raport kuri iki kibazo cyangwa inyunganizi?</string>
     <string name="report_title">Reporting comment</string>
     <string name="report">Report</string>
